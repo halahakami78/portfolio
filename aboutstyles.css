@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* ===== Biography Section ===== */
+.biography-section {
+    position: relative;
+    text-align: center;
+    padding: 230px 10% 200px;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+}
+
+.biography-section::before {
+    content: "Biography";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.biography-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 70px;
+    z-index: 1;
+    position: relative;
+}
+
+.biography-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.biography-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.biography-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.biography-label span {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+    color: #555;
+    font-weight: 600;
+}
+
+.biography-label .line {
+    width: 1px;
+    height: 80px;
+    background-color: #ccc;
+}
+
+/* ===== End Biography Section ===== */
+
+/* ===== Skills Section ===== */
+.skills-section {
+    position: relative;
+    text-align: center;
+    padding: 240px 10%;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+}
+
+.skills-section::before {
+    content: "Skills";
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.skills-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 120px;
+    z-index: 1;
+    position: relative;
+}
+
+/* ===== Skills table ===== */
+
+.skills-table {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+.skills-table table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 5px;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 40px    
+  
+
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #555;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+td {
+    color: black;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.skills-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-label span {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+    color: #555;
+    font-weight: 600;
+}
+
+.skills-label .line {
+    width: 1px;
+    height: 80px;
+    background-color: #ccc;
+}
+
+
+
+/* ===== End Skills Section ===== */

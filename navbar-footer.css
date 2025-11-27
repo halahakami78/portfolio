@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* ===== navbar Section ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+li,
+a,
+button {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #0a0a0a;
+    text-decoration: none;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: white;
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #777777;
+    transform: scale(1.1);
+}
+
+/* ===== end navbar Section ===== */
+
+/* ===== Footer Section ===== */
+footer {
+    text-align: center;
+    padding: 20px 10%;
+    font-size: 10px;
+    color: black;
+}
+
+/* ===== end Footer Section ===== */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizstyles.css">
+    <link rel="stylesheet" href="navbar-footer.css">
+    <script src="quiz.js" defer></script>
+</head>
+
+<!-- navbar section -->
+
+<body>
+    <header>
+        <img class="logo" src="assets/logo.jpg" alt="Logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </a>
+    </header>
+</body>
+<!-- end navbar section -->
+
+<!-- Quiz section -->
+<section class="quiz-section">
+    <!-- quiz title -->
+    <h2 class="quiz-title">Test Your Knowledge!</h2>
+
+    <div class="quiz-content">
+
+        <div class="quiz-label">
+            <span>QUIZ</span>
+            <div class="line"></div>
+        </div>
+
+        <div class="quiz-container">
+            <p id="question"></p>
+
+            <form id="answer-form">
+                <input type="number" id="answer" placeholder="Your Answer" required>
+                <button id="submit">Submit Answer</button>
+            </form>
+
+
+
+            <div id="results">
+                <p id="feedback"></p>
+                <p id="score"></p>
+            </div>
+
+        </div>
+</section>
+
+</html>
+<!-- end quiz section -->

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* ===== Quiz Section ===== */
+.quiz-section {
+  position: relative;
+  padding: 120px 10% 80px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+/* Large background word */
+.quiz-section::before {
+  content: "Quiz";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  z-index: 0;
+  pointer-events: none;
+  line-height: 1;
+}
+
+/* Title */
+.quiz-title {
+  position: relative;
+  margin-top: 140px;
+  margin-bottom: 80px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  z-index: 1;
+}
+
+/* Layout row: label (vertical) + container */
+.quiz-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Vertical label */
+.quiz-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.quiz-label span {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 0.9rem;
+  letter-spacing: 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+.quiz-label .line {
+  width: 1px;
+  height: 80px;
+  background-color: #ccc;
+}
+
+/* Card container */
+.quiz-container {
+  width: min(520px, 90vw);
+  background: #fff;
+  padding: 28px 26px;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* Question text */
+#question {
+  font-size: 1.7rem;
+  color: #222;
+  margin-bottom: 14px;
+}
+
+/* Form */
+#answer-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+#answer {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  font-size: 1.2rem;
+  color: #111;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#answer::placeholder {
+  color: #999;
+}
+
+#answer:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.15);
+}
+
+/* Submit button */
+#submit {
+  padding: 12px 18px;
+  background: #9b59b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.02s ease;
+  white-space: nowrap;
+}
+
+#submit:hover { background: #8e44ad; }
+#submit:active { transform: translateY(1px); }
+
+/* Results + feedback */
+#results {
+  margin-top: 8px;
+  min-height: 40px; /* keeps layout steady when messages change */
+}
+
+#feedback {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+#score {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Optional helpers if you toggle classes from JS */
+.correct { color: #1b8f3e; }   /* green */
+.wrong   { color: #c0392b; }   /* red */
+
+/* ===== Responsive ===== */
+@media (max-width: 820px) {
+  .quiz-content {
+    gap: 24px;
+  }
+
+  .quiz-section::before {
+    font-size: 14rem;
+    top: 20px;
+  }
+
+  .quiz-title {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .quiz-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz-label {
+    order: -1; /* label above card on mobile */
+  }
+
+  #answer-form {
+    flex-direction: column;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
